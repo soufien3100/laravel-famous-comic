@@ -1,0 +1,30 @@
+* {
+    padding: 0;
+    margin: 0;
+    
+}
+
+
+body {
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+ul {
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    background-color: #2196f300;
+    justify-content: space-around;
+}
+li {
+    list-style: none;
+    font-size: 25px;
+    color: black;
+}
+label { 
+    width: 5em;font-family: 'Courier New', Courier, monospace;color: aliceblue 
+}
+

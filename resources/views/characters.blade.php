@@ -1,6 +1,6 @@
 @extends('layout.base')
 @section('css','characters')
-@section('title','Books')
+@section('title','Personnage')
 
 @section('content')
 <h1>Livres</h1>
@@ -19,7 +19,7 @@
                 <td><a href="character/{{$character->id}}">{{$character->name}}</a></td>
                 <td>{{$character->creationDate}}</td>
                 <td>{{$character->link}}</td>
-                <td>{{$character->designer->name}}</td>
+                <td> <a href="designer/{{$character->designer->id}}">{{$character->designer->name}}</a> </td>
                 <td>
                     <form action="deleteCharacter" method="POST">
                         @csrf

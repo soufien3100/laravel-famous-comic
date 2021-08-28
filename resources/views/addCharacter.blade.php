@@ -25,7 +25,7 @@
                     <option value="{{ $designer->id }}">{{ $designer->name }}</option> 
                 @endforeach
             </select>
-    </div> 
+        </div> 
         <button type="submit" > Envoyer !</button>
     </form>
 @endsection

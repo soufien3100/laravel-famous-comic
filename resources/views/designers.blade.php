@@ -13,20 +13,18 @@
         </tr>
     </thead>
     <tbody>
-        @foreach ($designers as $designer )
             <tr>
-                <td>{{$designer->name}}</td>
-                <td>{{$designer->birthday}}</td>
-                <td>{{$designer->nationality}}</td>
+                <td>{{$designers->name}}</td>
+                <td>{{$designers->birthday}}</td>
+                <td>{{$designers->nationality}}</td>
                 <td>
                     <form action="deleteDesigner" method="POST">
                         @csrf
-                        <input type="hidden" name="id" value="{{ $designer->id }}">
+                        <input type="hidden" name="id" value="{{ $designers->id }}">
                         <input type="submit" id="delete" value="supprimer"> 
                     </form>
                 </td>
             </tr>   
-        @endforeach
     </tbody>
 </table>
 @endsection

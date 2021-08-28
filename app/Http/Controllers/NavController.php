@@ -16,31 +16,30 @@ class NavController extends Controller
     public function characters() {
 
         $characters = Character::all();
-        
         return view('characters',['characters'=>$characters]);
     }
 
     public function addCharacter() {
-        $characters = Character::all()->sortBy('name');
         $designers = Designer::all()->sortBy('name');
-        return view('addCharacter', ['characters' => $characters, 'designers' => $designers]);
+        return view('addCharacter', ['designers' => $designers]);
     }
-    public function addDesigner() {
-        $designers = Designer::all();
-        return view('addDesigner',['designers' => $designers]);
-    }
-
+    
     public function character($id) {
         $character = Character::findOrFail($id);
         return view('character', ['character' => $character]);
     }
+
+    public function updateCharacter(Request $request){
+        $character = Character::findOrFail($request->id);
+        $designer = Designer::all()->sortBy('name');
+        return view('updateCharacter', ['character' => $character, 'designer' => $designer]);
+    }
     
     //details de dessinateur 
 
-    public function designer(){
+    public function designers($id){
         
-        $designers = Designer::all();
-
+        $designers = Designer::findOrFail($id);
         return view('designers', ['designers' => $designers]);
     }
 

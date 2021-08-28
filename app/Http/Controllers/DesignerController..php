@@ -18,12 +18,14 @@ class DesignerController extends Controller
         $designers->nationality = $request->nationality;
         
         $designers->save();
+
         return redirect('designers');
     }
+    
     public function deleteDesigner (Request $request) {
-        dd($request);
+       
         
-        $designer = Character::findOrFail($request->id);
+        $designer = Designer::findOrFail($request->id);
        
        
         $designer->delete();
@@ -31,3 +33,4 @@ class DesignerController extends Controller
         return redirect('designers');
     }
 
+}

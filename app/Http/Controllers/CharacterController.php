@@ -25,19 +25,19 @@ class CharacterController extends Controller
         
         $characters = Character::findOrFail($request->id);
        
-       
         $characters->delete();
 
         return redirect('characters');
     }
 
-    public function updateCharacter(Request $request){
-        $characters = Character::findOrFail($request->id);
-        $characters->name = $request->name;
-        $characters->creationDate = $request->creationDate;
-        $characters->link = $request->link;
-        $characters->designer_id = $request->designer_id;
-        $characters->save();
+    public function updateCharacters(Request $request){
+        $character = Character::findOrFail($request->id);
+        
+        $character->name = $request->name;
+        $character->creationDate = $request->creationDate;
+        $character->link = $request->link;
+        $character->designer_id = $request->designer_id;
+        $character->save();
         
         return redirect('characters');
         

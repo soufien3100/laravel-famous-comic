@@ -2,8 +2,11 @@
 @section('css','home')
 @section('title','Accueil')
 @section('content')
+ <body>
+     
+ </body>   
 
-<h1>Accueil</h1>
-    
-  
+       
+   
+
 @endsection

@@ -1,8 +1,8 @@
 @extends('layout.base')
 @section('css','update')
-@section('title','Modifier')
+@section('title','Modifier un personnage')
 @section('content')
-    <h1 class="title">Modifier un Personnage</h1>
+    
     <div>
         <form action="/updateCharacter/{{$character->id}}" method="POST">
             @csrf

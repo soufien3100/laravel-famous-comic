@@ -29,7 +29,7 @@ Route::post('updateCharacter',[NavController::class,'updateCharacter']) ;
 Route::post('updateCharacter/{id}', [CharacterController::class, 'updateCharacters']);
 
 
-Route::get('designers', [NavController::class, 'designers']);
+Route::get('designer', [NavController::class, 'designer']);
 Route::get('addDesigner', [NavController::class, 'addDesigner']);
 Route::post('deleteDesigner',[DesignerController::class,'deleteDesigner']);
-Route::get('designers/{id}', [NavController::class,'designers']) ; 
+Route::get('designers/{id}', [NavController::class,'designer']) ; 

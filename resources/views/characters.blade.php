@@ -19,7 +19,7 @@
                 <td><a href="character/{{$character->id}}">{{$character->name}}</a></td>
                 <td>{{$character->creationDate}}</td>
                 <td>{{$character->link}}</td>
-                <td> <a href="designers/{{$character->designer->id}}">{{$character->designer->name}}</a> </td>
+                
                 <td>
                     <form action="deleteCharacter" method="POST">
                         @csrf

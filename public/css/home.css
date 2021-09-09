@@ -1,0 +1,13 @@
+body {
+    display: flex;
+    flex-direction: column;
+   
+}
+.text {
+    border: 1px solid black;
+    width: 700px;
+    height: 150px;
+    text-underline-position: auto;
+    font-size: inherit;
+    text-align: center;
+}

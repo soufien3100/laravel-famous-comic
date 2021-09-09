@@ -16,23 +16,61 @@ class DesignerSeeder extends Seeder
     {
         DB::table('designers')->insert([
         [
-            'name' => 'Jack',
-            'birthday' => 2000,
-            'nationality' => "Français",
+            'name' => 'Meyer, Ralph',
+            'birthday' => 1971,
+            'nationality' => "France",
             
         ],
         [
-            'name' => 'Alain',
-            'birthday' => 2001,
-            'nationality' => 'Français',
+            'name' => 'Meyer, Ralph',
+            'birthday' => 1971,
+            'nationality' => "France",
+            
+        ],
+        [
+            'name' => 'Meyer, Ralph',
+            'birthday' => 1971,
+            'nationality' => "France",
+            
+        ],
+        [
+            'name' => 'Hergé',
+            'birthday' => 1927,
+            'nationality' => "Belge",
+            
+        ],
+        [
+            'name' => 'Hugo Pratt',
+            'birthday' => 1920,
+            'nationality' => 'Italien',
            
         ],
         [
-            'name' => 'Charlie',
-            'birthday' => 1998,
-            'nationality' => "Americain",
+            'name' => 'Carloni, Stefano',
+            'birthday' => 1988,
+            'nationality' => "Italie",
             
-        ]
+        ],
+        [
+            'name' => 'Carloni, Stefano',
+            'birthday' => 1988,
+            'nationality' => "Italie",
+            
+        ],
+        [
+            'name' => 'Carloni, Stefano',
+            'birthday' => 1988,
+            'nationality' => "Italie",
+            
+        ],
+        [
+            'name' => 'Carloni, Stefano',
+            'birthday' => 1988,
+            'nationality' => "Italie",
+            
+        ],
+        
+        
         ]) ;
     }
 }

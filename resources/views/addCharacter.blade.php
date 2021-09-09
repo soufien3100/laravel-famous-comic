@@ -4,6 +4,7 @@
 @section('css','addCharacter')
 
 @section('content')
+<body>
     <form action="addCharacter" method="POST">
         @csrf
         <div>
@@ -28,4 +29,6 @@
         </div> 
         <button type="submit" > Envoyer !</button>
     </form>
+</body>
+    
 @endsection

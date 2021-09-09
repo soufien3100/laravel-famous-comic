@@ -25,6 +25,7 @@ class NavController extends Controller
     }
     
     public function character($id) {
+        
         $character = Character::findOrFail($id);
         return view('character', ['character' => $character]);
     }

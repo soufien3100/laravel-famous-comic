@@ -15,6 +15,6 @@
         <p>Nom de la BD : {{ $character->link }} </p>
     </div>
     <div>
-        <p>Dessinateur : {{ $character->designer_id}} </p>
+        <p>Dessinateur : {{ $character->designer->name}} </p>
     </div>
 @endsection

@@ -8,7 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class Character extends Model
 {
     public function designer() {
-
         return $this->belongsto(Designer::class) ; 
     }
 }

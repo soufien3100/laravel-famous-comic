@@ -18,6 +18,11 @@ class NavController extends Controller
         $characters = Character::all();
         return view('characters',['characters'=>$characters]);
     }
+    public function listCharacter() {
+
+        $characters = Character::all();
+        return view('listCharacter',['listCharacter'=>$characters]);
+    }
 
     public function addCharacter() {
         $designers = Designer::all()->sortBy('name');
@@ -37,6 +42,12 @@ class NavController extends Controller
     }
     
     //details de dessinateur 
+
+    public function listDesigners() {
+
+        $designers = Designer::all();
+        return view('designers',['deisgners'=>$designers]);
+    }
 
     public function designers($id){
         

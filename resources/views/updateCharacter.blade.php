@@ -3,7 +3,7 @@
 @section('title','Modifier un personnage')
 @section('content')
     
-    <div>
+    <div class="form-wrapper">
         <form action="/updateCharacter/{{$character->id}}" method="POST">
             @csrf
             <div>
@@ -26,7 +26,7 @@
                     @endforeach
                 </select>
             </div>
-            <div class="">
+            <div class="button">
                 <input type="submit" value="modifier">
             </div>
         </form>

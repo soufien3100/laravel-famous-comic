@@ -11,13 +11,18 @@
   </head>
 <body>
   <header>
-    <nav>
-      <ul>
-        <li><a href="/">Accueil</a></li>
-        <li><a href="addCharacter">Ajouter</a></li>
-        <li><a href="characters">liste</a></li>
-      </ul>
-    </nav>  
+    <div class="wrapper">
+      <nav>
+        <ul class="nav-bar">
+          <li class="nav-a"><a href="/">Accueil</a></li>
+          <li class="nav-a"><a href="listCharacter">Liste des personnages</a></li>
+          <li class="nav-a"><a href="addCharacter">Ajouter un Personnage</a></li>
+          <li class="nav-a"><a href="designers">liste des dessinateurs</a></li>
+          <li class="nav-a"><a href="">Ajouter un dessinateur</a></li>
+          <li class="nav-a"><a href="characters">bédéthèque-BD</a></li>
+        </ul>
+      </nav>  
+    </div>
   </header>
   <main>
         @yield('content')

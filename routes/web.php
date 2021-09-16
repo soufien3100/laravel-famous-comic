@@ -21,6 +21,7 @@ use App\Http\Controllers\DesignerController;
 
 Route::get('/', [NavController::class, 'home']);
 Route::get('characters', [NavController::class, 'characters']);
+Route::get('listCharacter',[NavController::class,'characters']);
 Route::get('addCharacter', [NavController::class, 'addCharacter']);
 Route::post('addCharacter', [CharacterController::class, 'addCharacter']);
 Route::post('deleteCharacter',[CharacterController::class,'deleteCharacter']);
@@ -28,8 +29,9 @@ Route::get('character/{id}', [NavController::class,'character']) ;
 Route::post('updateCharacter',[NavController::class,'updateCharacter']) ; 
 Route::post('updateCharacter/{id}', [CharacterController::class, 'updateCharacters']);
 
-
+Route::get('listDesigners',[NavController::class,'designers']);
 Route::get('designer', [NavController::class, 'designer']);
 Route::get('addDesigner', [NavController::class, 'addDesigner']);
 Route::post('deleteDesigner',[DesignerController::class,'deleteDesigner']);
-Route::get('designers/{id}', [NavController::class,'designer']) ; 
+Route::get('designers/{id}', [NavController::class,'designers']) ; 
+ 
